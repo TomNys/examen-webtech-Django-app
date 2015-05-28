@@ -9,6 +9,7 @@ import urllib2
 
 r = redis.StrictRedis(host='localhost', port=1123, db=0)
 
+#werkt enkel op hardcoded films atm
 def fill_db():
     r.set('movie:0', '{"Title": "Frozen", "Year": "2013", "Actors":"Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad" }')
     r.set('movie:1', '{"Title": "Avengers: Age of Ultron", "Year": "2015", "Actors":"Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans" }')
