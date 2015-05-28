@@ -21,9 +21,6 @@ def movies(request, movie_name):
 	
 	fill_db()
 
-	mijn_json = urllib2.urlopen("http://www.omdbapi.com/?t=%&y=&plot=short&r=json" % movie_name)
-	
-
 	movies_keys = r.keys('movie:*')
 	movie_found = 'false'
 	
